@@ -1,0 +1,205 @@
+/*초기화 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* 전체설정 */
+#container {
+  width: 100%;
+  margin: 0px auto;
+  /* padding: 0 100px; */
+}
+
+header {
+  padding: 0 80px;
+  margin-bottom: 10px;
+}
+/* header - 상단 sitemap */
+.sitemap ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+.sitemap ul li a {
+  padding: 5px;
+  margin: 5px;
+  font-size: 13px;
+  color: rgb(145, 145, 145);
+}
+
+/* header logo/nav 설정 */
+.headerUI {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+/* header - logo */
+
+.header-logo h1 {
+  font-size: 25px;
+}
+
+/* header nav */
+.headerUI .nav ul {
+  display: flex;
+}
+
+.headerUI .nav ul li a {
+  padding: 5px;
+  margin-left: 20px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* main */
+
+/* 동영상 배너 */
+.main-banner {
+  height: 550px;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+/* 동영상 설정 */
+
+.main-banner__video video {
+  width: 100%;
+  height: 550px;
+  /* min-width: 100%;
+  min-height: 100%; */
+  object-fit: cover;
+  filter: brightness(0.2);
+  position: relative;
+}
+
+.videoBtn i {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  cursor: pointer;
+  transition: opacity 0.5s ease-in-out;
+}
+.hidden {
+  opacity: 0;
+}
+.videoBtn i:hover {
+  color: white;
+}
+
+/* 배너 텍스트 */
+.main-banner__text {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  color: white;
+}
+
+.main-banner__text h1 {
+  font-size: 70px;
+  margin-bottom: 10px;
+}
+.main-banner__text p {
+  width: 400px;
+  margin-bottom: 50px;
+}
+/* 배너 버튼 */
+.main-banner__text button {
+  width: 50%;
+  border: 1px solid white;
+  background: none;
+  color: white;
+  padding: 5px 0;
+  font-size: 12px;
+  cursor: pointer;
+}
+.main-banner__text button:hover {
+  transition: background-color 0.3s ease-in-out;
+  background-color: white;
+  color: black;
+}
+
+/* recent news 설정 */
+.main-recentNews {
+  margin-bottom: 80px;
+}
+.recentNews-title {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.recentNews-contnets {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.recentNews-contnets__content {
+  display: flex;
+  flex-direction: column;
+  margin: 8px;
+  width: 280px;
+}
+
+.recentNews-contnets__content img {
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.recentNews-contnets__content span {
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+.recentNews-contnets__content p {
+  width: 280px;
+}
+
+footer {
+  background-color: #212529;
+  color: rgba(255, 255, 255, 0.2);
+  padding: 50px 80px;
+}
+
+.footerUi {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.footerUi-logo h1 {
+  font-size: 25px;
+}
+.footerUi-sitemap ul {
+  display: flex;
+}
+.footerUi-sitemap ul li a {
+  margin-left: 15px;
+  font-size: 12px;
+}
+.footerUi-sitemap ul li a:hover {
+  color: white;
+}
+
+.footer-text {
+  font-size: 13px;
+}
+.footer-text address {
+  margin-bottom: 20px;
+}
